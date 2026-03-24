@@ -1,1 +1,72 @@
-Index
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biografie – Nanna & Andrea</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Nanna & Andrea</h1>
+        <p class="subtitle">Le nostre storie</p>
+    </header>
+
+    <!-- VIDEO YOUTUBE -->
+    <section class="video-section">
+        <div class="video-container">
+            <iframe 
+                src="https://www.youtube.com/embed/VIDEO_ID"
+                title="YouTube video"
+                frameborder="0"
+                allowfullscreen>
+            </iframe>
+        </div>
+    </section>
+
+    <!-- SEZIONE NANNA -->
+    <section class="bio-section">
+        <h2>Nanna</h2>
+
+        <div class="bio-content">
+            <div class="bio-photos">
+                <img src="foto_nanna_1.jpg" alt="Foto di Nanna">
+                <img src="foto_nanna_2.jpg" alt="Foto di Nanna">
+            </div>
+
+            <div class="bio-text">
+                <p>
+                    Qui puoi inserire la descrizione di Nanna.  
+                    Racconta chi è, cosa ama, la sua storia, i suoi progetti.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEZIONE ANDREA -->
+    <section class="bio-section">
+        <h2>Andrea</h2>
+
+        <div class="bio-content">
+            <div class="bio-photos">
+                <img src="foto_andrea_1.jpg" alt="Foto di Andrea">
+                <img src="foto_andrea_2.jpg" alt="Foto di Andrea">
+            </div>
+
+            <div class="bio-text">
+                <p>
+                    Qui puoi inserire la descrizione di Andrea.  
+                    Storia personale, passioni, obiettivi, curiosità.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Pagina creata con ❤️</p>
+    </footer>
+
+</body>
+</html>
