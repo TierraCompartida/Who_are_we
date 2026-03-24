@@ -44,23 +44,54 @@ h1 {
 }
 
 /* ===========================
-   VIDEO YOUTUBE
+   VIDEO + TESTO AFFIANCATI
 =========================== */
-/* VIDEO ADATTIVO (si adatta alla dimensione reale del video) */
+.video-and-text {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 60px 10%;
+  flex-wrap: wrap; /* mobile responsive */
+}
+
+/* VIDEO SHORT ADATTIVO */
 .video-auto {
-    width: 100%;
-    max-width: 420px; /* larghezza massima consigliata per uno Short */
-    margin: 0 auto 50px;
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+  width: 100%;
+  max-width: 380px; /* larghezza tipica di uno Short */
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.08);
 }
 
 .video-auto iframe {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 9 / 16; /* YouTube Short */
-    border: none;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 9 / 16; /* formato verticale */
+  border: none;
+}
+
+/* TESTO A DESTRA DEL VIDEO */
+.video-description {
+  flex: 1;
+  max-width: 500px;
+  background: var(--bianco);
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+  text-align: left;
+}
+
+.video-description h2 {
+  color: var(--verde-scuro);
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.video-description p {
+  color: #5b6d63;
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
 /* ===========================
@@ -76,7 +107,7 @@ h1 {
   color: var(--verde-scuro);
 }
 
-/* Layout tipo “card grid” */
+/* GRID CARD */
 .bio-content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -84,7 +115,7 @@ h1 {
   justify-items: center;
 }
 
-/* CARD FOTO */
+/* FOTO */
 .bio-photos img {
   width: 100%;
   max-width: 350px;
