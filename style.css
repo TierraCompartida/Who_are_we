@@ -46,25 +46,21 @@ h1 {
 /* ===========================
    VIDEO YOUTUBE
 =========================== */
-/* VIDEO SHORT (9:16) */
-.short-container {
-    position: relative;
+/* VIDEO ADATTIVO (si adatta alla dimensione reale del video) */
+.video-auto {
     width: 100%;
-    max-width: 380px; /* larghezza tipica di uno short */
+    max-width: 420px; /* larghezza massima consigliata per uno Short */
     margin: 0 auto 50px;
-    padding-bottom: 177.78%; /* proporzione 9:16 → 16/9 = 1.7778 */
-    height: 0;
-    overflow: hidden;
     border-radius: 20px;
+    overflow: hidden;
     box-shadow: 0 15px 35px rgba(0,0,0,0.08);
 }
 
-.short-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
+.video-auto iframe {
     width: 100%;
-    height: 100%;
+    height: auto;
+    aspect-ratio: 9 / 16; /* YouTube Short */
+    border: none;
 }
 
 /* ===========================
